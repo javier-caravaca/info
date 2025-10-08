@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+header {
+    background-color: #007bff; /* Azul moderno */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 0.95em;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 0 30px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.job-entry, .education-entry {
+    margin-bottom: 15px;
+}
+
+.job-entry h4, .education-entry h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 700;
+}
+
+.company, .institution {
+    font-style: italic;
+    color: #555;
+    margin: 2px 0;
+}
+
+.dates {
+    font-size: 0.9em;
+    color: #777;
+    margin: 2px 0 5px 0;
+}
+
+.job-entry ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.skills-cert-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skills-cert-container > div {
+    flex: 1;
+}
+
+.skills-cert-container h4 {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.skills-cert-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-cert-container li {
+    margin-bottom: 5px;
+}
+
+/* Optimización para impresión (PDF) */
+@media print {
+    body {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #007bff !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    .section h3 {
+        border-bottom: 3px solid #007bff !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+        color: #007bff !important;
+    }
+}
